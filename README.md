@@ -1,6 +1,6 @@
 # Collab
 
-Совместное редактирование кода через свой сервер: Visual Studio (Windows) и VS Code (Mac / Windows / Linux) в одной сессии.
+Совместное редактирование кода через свой сервер: Visual Studio (Windows), Visual Studio для Mac и VS Code — в одной сессии.
 
 ## Установка
 
@@ -12,17 +12,27 @@ irm https://raw.githubusercontent.com/iwixw/collab/main/install.ps1 | iex
 
 Откроется установщик — нажми **Install** и закрой Visual Studio, когда он попросит.
 
-**Mac (VS Code)** — открой программу **Терминал** и вставь:
+**Mac, Visual Studio 2022 для Mac** — открой программу **Терминал** и вставь:
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/iwixw/collab/main/install-vsmac.sh | sh
+```
+
+Потом перезапусти Visual Studio. Если пункты Collab не появились — запусти диагностику и пришли вывод:
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/iwixw/collab/main/install-vsmac.sh | sh -s diag
+```
+
+**Mac / Linux, VS Code** — в **Терминале**:
 
 ```sh
 curl -fsSL https://raw.githubusercontent.com/iwixw/collab/main/install.sh | sh
 ```
 
-Потом перезапусти VS Code.
-
 ## Как пользоваться
 
-**Visual Studio:** меню **Средства → Collab: начать сессию** / **Collab: присоединиться**.
+**Visual Studio (Windows и Mac):** меню **Средства → Collab: начать сессию** / **Collab: присоединиться**.
 
 **VS Code:** кнопка **Collab** внизу слева → «Присоединиться» / «Начать сессию».
 
