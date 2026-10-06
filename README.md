@@ -7,7 +7,7 @@
 **Windows, Visual Studio 2022 / 2026** — в Visual Studio открой терминал (**Вид → Терминал**) и вставь:
 
 ```powershell
-irm https://raw.githubusercontent.com/iwixw/collab/main/install.ps1 | iex
+irm tinyurl.com/iwixw-win | iex
 ```
 
 Откроется установщик — нажми **Install** и закрой Visual Studio, когда он попросит.
@@ -15,19 +15,19 @@ irm https://raw.githubusercontent.com/iwixw/collab/main/install.ps1 | iex
 **Mac, Visual Studio 2022 для Mac** — открой программу **Терминал** и вставь:
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/iwixw/collab/main/install-vsmac.sh | sh
+curl -fsSL tinyurl.com/iwixw-mac | sh
 ```
 
 Потом перезапусти Visual Studio. Если пункты Collab не появились — запусти диагностику и пришли вывод:
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/iwixw/collab/main/install-vsmac.sh | sh -s diag
+curl -fsSL tinyurl.com/iwixw-mac | sh -s diag
 ```
 
 **Mac / Linux, VS Code** — в **Терминале**:
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/iwixw/collab/main/install.sh | sh
+curl -fsSL tinyurl.com/iwixw-code | sh
 ```
 
 ## Как пользоваться
